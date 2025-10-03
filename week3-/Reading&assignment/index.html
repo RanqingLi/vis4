@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Rachel's Number Adder</title>
+</head>
+<body>
+	<div id="headbar">
+		<h1 class="headbar">Number Adder</h1>
+		<h4 class="headbar">Info 1</h4>
+		<h4 class="headbar">Info 2</h4>
+		<h4 class="headbar">Info 3</h4>
+		<style>
+			.headbar {display: inline-block;}
+        </style>
+	</div>
+	<div id="main-content" class="bucket bolded">
+		<div class="resultbar">
+			<h3>Result</h3>
+			<p id="resultId">0</p>
+		</div>
+		<div class="controlcenter">
+			<h3>Control Center</h3>
+			<div class="controlbuttons">
+			<button id=minustwo>-2</button>
+			<button id=minusone>-1</button>
+			<button id=reset>Reset</button>
+			<button id=plusone>+1</button>
+			<button id=plustwo>+2</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script>
+	var total=0
+	document.getElementById("minustwo").addEventListener("click", function () {
+      total = total - 2;
+      console.log(total)
+      document.getElementById("resultId").textContent = total;
+    });
+    document.getElementById("minusone").addEventListener("click", function () {
+      total = total - 1;
+      console.log(total)
+      document.getElementById("resultId").textContent = total;
+    });
+    document.getElementById("reset").addEventListener("click", function () {
+      total = 0;
+      console.log(total)
+      document.getElementById("resultId").textContent = total;
+    });
+    document.getElementById("plusone").addEventListener("click", function () {
+      total = total + 1;
+      console.log(total)
+      document.getElementById("resultId").textContent = total;
+    });
+    document.getElementById("plustwo").addEventListener("click", function () {
+      total = total + 2;
+      console.log(total)
+      document.getElementById("resultId").textContent = total;
+    });
+</script>
+
+</html>
