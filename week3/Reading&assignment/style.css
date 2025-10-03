@@ -1,0 +1,66 @@
+.bolded{
+	font-size: 25px;
+}
+
+#headbar {
+    background-color: #333;
+    color: floralwhite;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+
+#headbar h1{
+	margin: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+#headbar h4{
+    margin: 20 px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+
+html, body{
+	margin: 0;
+}
+
+#main-content {
+    background-color: #f4f4f4;
+    height: calc(100vh - 150px - 40px);
+    padding: 0px;
+    display: flex;
+    gap: 0px
+}
+
+
+.resultbar {
+  background: #f0f4ff;
+  padding: 0px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+}
+
+.controlcenter {
+  background: #fffbe6;
+  padding: 0px;
+  border-radius: 8px;
+  flex: 2;
+  text-align: center
+}
+
+button {
+    width: 100px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    background-color: darkgrey;
+    font-size: 18px;
+}
