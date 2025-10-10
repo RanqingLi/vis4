@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Rachel's Number Adder</title>
+</head>
+<body>
+	<div id="headbar">
+		<h1 class="headbar">Number Adder</h1>
+		<h4 class="headbar">Info 1</h4>
+		<h4 class="headbar">Info 2</h4>
+		<h4 class="headbar">Info 3</h4>
+	</div>
+	<div id="main-content" class="bucket bolded">
+		<div class="resultbar">
+			<h3>Result</h3>
+			<p id="resultId">0</p>
+			<p id="totalMessage"></p>
+			<h3>History List</h3>
+			<div id=summary></div>
+			<ul id="historylist"></ul>
+		</div>
+		<div class="controlcenter">
+			<h3>Control Center</h3>
+			<div class="controlbuttons">
+			<button id="minustwo">-2</button>
+			<button id="minusone">-1</button>
+			<button id="reset">Reset</button>
+			<button id="plusone">+1</button>
+			<button id="plustwo">+2</button>
+			</div>
+      <button id="clearall">Clear History & Results</button>
+		</div>
+	</div>
+
+</body>
+<script>
+	var historyArray =[]
+	var operationCount = { additions: 0, subtractions: 0 };
+	function updateHistory() {
+    let historyContent = "";
+
+    for (let i = 0; i < historyArray.length; i++) {
+        historyContent += "<li onclick='removeHistoryItem(" + i + ")'>" + historyArray[i] + "</li>";
+    }
+    document.querySelector("#historylist").innerHTML = historyContent;
+  }
+  function removeHistoryItem(index) {
+    historyArray.splice(index, 1);
+    updateHistory();
+  }
+  
+
+  function updateSummary() {
+    document.querySelector("#summary").innerHTML = `Total additions: ${operationCount.additions}, <br> Total subtractions: ${operationCount.subtractions}`;
+  }
+
+	var total=0
+	function checkTotal() {
+    if (total > 0) {
+        document.querySelector("#totalMessage").innerHTML = "The total is positive.";
+    } else if (total < 0) {
+        document.querySelector("#totalMessage").innerHTML = "The total is negative.";
+    } else {
+        document.querySelector("#totalMessage").innerHTML = "The total is zero.";
+    }
+  }
+  function updateResults(){
+    updateHistory();
+    updateSummary();
+    checkTotal();
+  }
+
+	document.getElementById("minustwo").addEventListener("click", function () {
+      total = total - 2;
+      console.log(total)
+      document.getElementById("resultId").textContent = total;
+      historyArray.push("-2")
+      operationCount.subtractions = operationCount.subtractions + 1;
+      updateResults()
+    });
+    document.getElementById("minusone").addEventListener("click", function () {
+      total = total - 1;
+      console.log(total)
+      document.getElementById("resultId").textContent = total;
+      historyArray.push("-1")
+      operationCount.subtractions = operationCount.subtractions + 1;
+      updateResults()
+    });
+    document.getElementById("reset").addEventListener("click", function () {
+      total = 0;
+      console.log(total)
+      document.getElementById("resultId").textContent = total;
+      historyArray.push("Reset")
+      updateResults()
+    });
+    document.getElementById("plusone").addEventListener("click", function () {
+      total = total + 1;
+      console.log(total)
+      document.getElementById("resultId").textContent = total;
+      historyArray.push("+1")
+      operationCount.additions = operationCount.additions + 1;
+      updateResults()
+    });
+    document.getElementById("plustwo").addEventListener("click", function () {
+      total = total + 2;
+      console.log(total)
+      document.getElementById("resultId").textContent = total;
+      historyArray.push("+2")
+      operationCount.additions = operationCount.additions + 1;
+      updateResults()
+    });
+
+    document.getElementById("clearall").addEventListener("click", function ClearAll() {
+    	total = 0;
+      historyArray = [];
+      operationCount.additions = 0;
+      operationCount.subtractions = 0;
+      document.getElementById("resultId").textContent = total;
+      updateResults()
+    });
+
+  
+
+
+</script>
+
+</html>

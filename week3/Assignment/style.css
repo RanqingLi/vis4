@@ -1,0 +1,87 @@
+.bolded{
+	font-size: 25px;
+}
+
+#headbar {
+    background-color: #333;
+    color: mediumseagreen;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+
+#headbar h1{
+	margin: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+#headbar h4{
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+
+html, body{
+	margin: 0;
+}
+
+#main-content {
+    height: calc(100vh - 150px - 40px);
+    padding: 0px;
+    display: flex;
+    gap: 0px;
+}
+
+
+.resultbar {
+  background: #f0f4ff;
+  padding: 0px;
+  border-radius: 0px;
+  flex: 1;
+  text-align: center;
+}
+#historylist{
+    font-size: 15px;
+    list-style-type: none;
+    padding: 0px;
+}
+#totalMessage{
+    font-size: 20px;
+}
+#summary {
+    font-size: 20px;
+}
+.controlcenter {
+  background: white;
+  padding: 0px;
+  border-radius: 8px;
+  flex: 2;
+  text-align: center
+}
+
+.controlbuttons button{
+    width: 100px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    background-color: darkgrey;
+    font-size: 18px;
+}
+
+#clearall {
+  width: 520px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin: 16px auto 0;
+  background-color: mediumseagreen;
+}
