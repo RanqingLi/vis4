@@ -7,7 +7,10 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App
+    header="Rachel's number counter"
+    navBarTitle="This is week 4"
+    subheader="Number Counter subheader" />
   </React.StrictMode>
 );
 

@@ -1,0 +1,16 @@
+.resultbar {
+  background: #f0f4ff;
+  padding: 0px;
+  border-radius: 0px;
+  flex: 1;
+  text-align: center;
+}
+
+#historylist{
+    font-size: 15px;
+    list-style-type: none;
+    padding: 0px;
+}
+#totalMessage{
+    font-size: 20px;
+}

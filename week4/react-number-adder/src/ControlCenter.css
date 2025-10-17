@@ -1,0 +1,29 @@
+.controlCenter {
+  background: white;
+  padding: 0px;
+  border-radius: 8px;
+  flex: 2;
+  text-align: center
+}
+
+.controlButtons button{
+    width: 100px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    background-color: darkgrey;
+    font-size: 18px;
+}
+
+#clearAll {
+  width: 520px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin: 16px auto 0;
+  background-color: mediumseagreen;
+}
