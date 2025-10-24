@@ -1,7 +1,7 @@
 import './ResultBar.css';
 
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch, useEffect } from 'react-redux';
 
 
 function ResultBar() {

@@ -71,6 +71,13 @@ const reducer = (state = initialState, action) => {
     case 'CLEAR_ALL':
       return { ...state, count: 0, history: [] };
 
+
+//    case 'Button_Pressed':
+//      console.log('Button_Pressed', state, action.payload);
+//      return{
+//       ...state.history, action.payload
+//      }
+
     default:
       return state;
   }
