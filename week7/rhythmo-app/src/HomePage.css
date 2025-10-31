@@ -1,0 +1,137 @@
+.PhoneFrameHP {
+  position: relative;
+  width: min(92vw, 430px);
+  aspect-ratio: 9 / 19.5;
+  margin: 3vh auto;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #F4F6FA;
+}
+.Data{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  width: 380px;
+  height: 400px;
+  background:linear-gradient(to bottom, #C59677 10%, #A1B6A3);
+  border-radius: 40px;
+}
+
+.DataDisplay{
+  width: 380px;
+}
+
+h1{
+  position: absolute;
+  top: 35px;
+  left: 7%;
+}
+h2{
+  text-align: left;
+  width: 88%;
+  margin: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #101010;
+}
+
+.SettingCard {
+  width: 380px;
+  margin: 16px auto;
+  padding: 16px 18px;
+  border-radius: 28px;
+  display: grid;
+  grid-template-columns: 84px 1fr 64px;
+  align-items: center;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+
+.IconBox {
+  width: 84px;
+  height: 84px;
+  border-radius: 22px;
+}
+
+
+.SettingText {
+  line-height: 1.2;
+  text-align: left;
+}
+
+.SettingTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: #101010;
+}
+
+.SettingSubtitle {
+  margin-top: 6px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.Switch {
+  justify-self: end;
+  width: 56px;
+  height: 30px;
+  border-radius: 999px;
+  border: none;
+  background: #C76A21;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease;
+}
+
+.Switch .Knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #EFEFEF;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+
+.Switch.on {
+  background: #7DA08F;
+}
+.Switch.on .Knob {
+  transform: translateX(26px);
+}
+
+.PomodoroSwitch {
+  background: #CBB7A2;
+}
+.PomodoroSwitch.on {
+  background: linear-gradient(90deg, #C76A21, #E89F5B);
+}
+
+
+.PanelSwitch {
+  background: #A1B6A3;
+}
+.PanelSwitch.on {
+  background: linear-gradient(90deg, #5C7A6C, #97B6A2);
+}
+
+
+@media (max-width: 360px) {
+  .SettingCard {
+    grid-template-columns: 72px 1fr 56px;
+  }
+  .IconBox {
+    width: 72px;
+    height: 72px;
+  }
+}

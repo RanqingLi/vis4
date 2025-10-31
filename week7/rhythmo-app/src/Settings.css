@@ -1,0 +1,49 @@
+.PhoneFrameST {
+  position: relative;
+  width: min(92vw, 430px);
+  aspect-ratio: 9 / 19.5;
+  margin: 3vh auto;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #384139;
+}
+/*.BackBtn2 {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(248, 244, 236, 0.6);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;       
+}
+.BackBtn2 img {
+  
+  height: 26px;
+}*/
+.PageTitleST{
+  position: absolute;
+  top: 40px;
+  left: 42%;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.LowerFrame{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 600px;
+  width: min(92vw, 430px);
+  height: 450px;
+  background-color: #EBE7E1;
+  border-radius: 40px;
+}

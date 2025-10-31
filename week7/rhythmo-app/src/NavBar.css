@@ -1,0 +1,44 @@
+.NavBar {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 88%;
+  height: 72px;
+  background-color: #4F6050;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.NavItem {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: transparent;
+  transition: all 0.25s ease;
+}
+
+.NavItem img {
+  width: 28px;
+  height: 28px;
+  opacity: 0.6;
+  filter: brightness(1.5);
+}
+
+.NavItem.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+.NavItem.active img {
+  opacity: 1;
+}
+
+.NavItem:hover {
+  background: rgba(255, 255, 255, 0.15);
+}

@@ -1,0 +1,118 @@
+.PhoneFramePC {
+  position: relative;
+  width: min(92vw, 430px);
+  aspect-ratio: 9 / 19.5;
+  margin: 3vh auto;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #384139;
+}
+
+.BackBtn2 {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(248, 244, 236, 0.6);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;       
+}
+.BackBtn2 img {
+  height: 26px;
+}
+.PageTitlePC{
+  position: absolute;
+  top: 40px;
+  left: 30%;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.PanelShowCase{
+  position: absolute;
+  top:130px;
+  left:25px;
+}
+.ControlFrame {
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 600px;
+  width: min(92vw, 430px);
+  height: 450px;
+  background-color: #EBE7E1;
+  border-radius: 40px;
+}
+.FunctionTitle {
+  font-size: 28px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-top: 40px;
+  align-items: flex-start;
+}
+
+.FunctionList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.FunctionOption {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+  margin-left: 45px;
+}
+
+.FunctionOption input[type="checkbox"],
+.FunctionOption input[type="radio"] {
+  display: none;
+}
+
+.CustomRadio {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CustomRadio::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #222;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.FunctionOption input[type="checkbox"]:checked + .CustomRadio::after {
+  opacity: 1;
+}
+
+.OptionLabel {
+  color: #444;
+}
