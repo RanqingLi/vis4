@@ -3,6 +3,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import PanelShowCase from "./PanelShowCase.png";
 import arrow2 from "./ArrowLeftWt.png";
+import PanelFrame from "./PanelFrame.png";
+import TimeDisplay from "./TimeDisplay.png";
+import SwitchDisplay from "./SwitchDisplay.png";
+import RemindersDisplay from "./RemindersDisplay.png";
+import SessionCountdownDisplay from "./SessionCountdownDisplay.png";
 import "./PanelControl.css";
 
 function PanelControl() {
